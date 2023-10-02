@@ -46,34 +46,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//upload count on s3
- AWS.config.update({
-   region: process.env.AWS_REGION,
-   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY ,
-   sessionToken: process.env.AWS_SESSION_TOKEN
- });
-
-const s3 = new AWS.S3();
-
-const bucketName = 'minjaeleebucket';
-const fileName = 'visitors.json';
-
-const params = {
-    Bucket: bucketName,
-    Key: fileName,
-    Body: JSON.stringify({ visits: 0 }), // JSON object to be stored
-    ContentType: 'application/json'
-};
-
-// Upload the file to S3
-s3.upload(params, (err, data) => {
-    if (err) {
-        console.error('Error uploading file:', err);
-    } else {
-        console.log('File uploaded successfully:', data.Location);
-    }
-});
-
-
 module.exports = app;
