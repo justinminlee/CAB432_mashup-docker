@@ -9,8 +9,8 @@ In the project directory, you can run:
 
 ```bash
 
-RECIPE_API_KEY= "Put your APIKEY";  #is at routes/recipe.js
-youtube_apiKey = "Put your APIKEY"; #is at routes/video.js
+RECIPE_API_KEY= "Put your APIKEY"  #is at routes/recipe.js
+youtube_apiKey = "Put your APIKEY" #is at routes/video.js
 
 ```
 
