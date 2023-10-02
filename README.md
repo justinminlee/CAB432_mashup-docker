@@ -5,12 +5,12 @@ This is CAB432 Assessment1 mashup/docker project
 
 In the project directory, you can run:
 
-### After filling out the strings, please remove those braces
+### You should replace this strings in bracket with your own api keys
 
 ```bash
 
-RECIPE_API_KEY="{Recipe API Key}"
-youtube_apiKey ="{YouTube Data API Key}"
+RECIPE_API_KEY= "Put your APIKEY";  #is at routes/recipe.js
+youtube_apiKey = "Put your APIKEY"; #is at routes/video.js
 
 ```
 
