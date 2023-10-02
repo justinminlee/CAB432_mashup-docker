@@ -5,6 +5,15 @@ This is CAB432 Assessment1 mashup/docker project
 
 In the project directory, you can run:
 
+### After filling out the strings, please remove those braces
+
+```bash
+
+RECIPE_API_KEY="{Recipe API Key}"
+youtube_apiKey ="{YouTube Data API Key}"
+
+```
+
 ### `npm start`
 
 Runs the app in the development mode.\
