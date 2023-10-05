@@ -1,5 +1,5 @@
 # CAB432_mashup-docker
-This is CAB432 Assessment1 mashup/docker project
+
 
 ## Available Scripts
 
